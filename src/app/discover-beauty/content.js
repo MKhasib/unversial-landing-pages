@@ -1,4 +1,5 @@
 import { Jersey_10, Open_Sans } from "next/font/google";
+import Link from 'next/link'
 
 const jersey = Jersey_10({
 	weight: "400",
@@ -20,13 +21,16 @@ export default function Content(){
             exercitationem, doloremque et vero minima laudantium, sapiente itaque
             ducimus a dolorum.
         </p>
+        <Link href="/discover-beauty-premium">
         <button
             className={
                 openSans.className +
-                ` bg-slate-950 text-white px-10 py-3 rounded-2xl hover:bg-slate-300 hover:text-black hover:font-bold`
+                ` bg-slate-950 text-white px-10 py-3 rounded-2xl hover:bg-slate-300 hover:text-black hover:font-bold transition-all`
             }>
-            Explore
+              Explore
+            
         </button>
+        </Link>
     </div>
     )
 }
